@@ -50,96 +50,228 @@
 
 				<section data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
 					<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">목차</h3>
-					<ol class="fragment">
-						<li>클라우드 컴퓨팅<a href="#클라우드">#</a></li>
-						<li>AWS<a href="#AWS">#</a></li>
-					</ol>
+					<ol>
+						<li>AWS의 이해와 실습</li>
+						<ol>
+							<li>AWS와 비용 정책<a href="#비용정책">#</a></li>
+							<li>AWS 회원 가입<a href="#AWS">#</a></li>
+							<li>Lightsail 인스턴스 생성</li>
+							<li>인스턴스 고정 IP 생성</li>
+							<li>웹 SSH로 서버 접속</li>
+						</ol>
+						<li>프론트엔드, 백엔드, 서버</li>
+					</ol>	
 				</section>
 				
-				<!-- <section id="문화콘텐츠" data-transition="fade" data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
+				<section id="비용정책" data-transition="fade" data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
 					<section>
-						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">문화, 콘텐츠 그리고 문화콘텐츠</h3>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">AWS와 비용 정책</h3>
 						<ul>
-							<li class="fragment"><strong>문화(culture)</strong>란?
+							<li class="fragment"><strong>AWS</strong>란?
 								<ul class="fragment">
-									<li>라틴어 ‘cultura’에서 나온 말로, 경작 혹은 재배의 뜻</li>
-									<li>인간의 정신 가운데 세련되고 일정한 유형을 지닌 정제된 형태의 의식</li>
-									<li>본래 특정 계급, 계층만 지닌 것으로 보았으나 20세기 이후 대중매체의 등장으로 대중문화 양식도 포함 (영화, 애니메이션, 캐릭터, 방송, 음악 등)</li>
+									<div style="text-align: center;"><img src="https://user-images.githubusercontent.com/61646760/197377390-1f88cad1-2329-4b62-9405-1a206e2f59c7.png" height="220" /></div>
+									<li>아마존 웹 서비스(Amazon Web Services)</li>
+									<li>클라우드 컴퓨팅 플랫폼 중 세계 점유율 1위</li>
+									<li>비용을 지불하면 필요하면 <strong>컴퓨팅 자원을 빌려 줌</strong></li>
 								</ul>
 							</li>
 						</ul>
-						<p class="fragment" align="right" style="font-size:24px">출처 : 『문화산업과 문화콘텐츠』(2010), 13p</p>
 					</section>
 					<section>
-						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">문화, 콘텐츠 그리고 문화콘텐츠</h3>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">AWS와 비용 정책</h3>
 						<ul>
-							<li class="fragment"><strong>콘텐츠(contents)</strong>란?
+							<li class="fragment"><strong>프리 티어</strong>
 								<ul class="fragment">
-									<li>내용 또는 내용물을 의미하는 콘텐트(content)의 복수형</li>
-									<li>“문자, 소리, 화상, 영상 등 다양한 형태로 이루어진 정보의 내용물”(한국문화정책개발원, 1998)</li>
+									<li>일정 기간, 한도 내의 AWS 서비스를 무료로 이용해 볼 수 있도록 지원</li>
+									<li>월 750시간(24×31=744시간), 3개월~12개월 무료</li>
+									<li>EC2, Lightsail 등 다양한 서비스 지원</li>
 								</ul>
 							</li>
 						</ul>
-						<p class="fragment" align="right" style="font-size:24px">출처 : 『문화산업과 문화콘텐츠』(2010), 14p</p>
-					</section>
-					<section>
-						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">문화, 콘텐츠 그리고 문화콘텐츠</h3>
-						<ul>
-							<li class="fragment"><strong>문화콘텐츠</strong>란?
-								<ul class="fragment">
-									<li>“문화, 예술, 학술적 내용의 창작 또는 제작물뿐만 아니라, 창작물을 이용하여 재생산된 모든 가공물 그리고 창작물의 수집, 가공을 통해서 상품화된 결과물들을 모두 포함하는 포괄적 개념” (한국콘텐츠진흥원, 2003)</li>
-									<li>“인간의 감성, 창의력, 상상력을 원천으로 하여 문화적 요소가 체화되어 경제적 가치를 창출하는 문화상품, 즉 영화, 게임, 애니메이션, 비디오, 방송, 음반, 캐릭터, 만화, 공연” (문화산업진흥기본법, 1999)</li>
-								</ul>
-							</li>
-						</ul>	
+						<p class="fragment" align="right" style="font-size:30px"><a href="https://aws.amazon.com/ko/free">- AWS 프리 티어 지원 서비스 및 정책 보기</a></p>
 					</section>
 				</section>
 
-				<section id="멀티미디어콘텐츠" data-transition="fade" data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
+				<section id="회원가입" data-transition="fade" data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
 					<section>
-						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">멀티미디어 + 콘텐츠</h3>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">AWS 회원 가입</h3>
 						<ul>
-							<li class="fragment"><strong>멀티미디어콘텐츠</strong>란?
+							<li class="fragment">가입 전 준비물
 								<ul class="fragment">
-									<li>multimedia + contents</li>
-									<li>정보를 디지털화하여 정보기기로 생산, 유통, 소비되는 형태의 정보콘텐츠</li>
-									<ul>
-										<li>즉, 멀티미디어를 활용한 콘텐츠</li>
-									</ul>
-									<li>디지털화된 첨단 영상물, 멀티미디어 출판물, 전자게임과 온라인 혹은 인터넷 형태로 제공되는 서비스 내용물</li>
+									<li>개인 이메일 (gmail 권장)</li>
+									<li>결제 정보 입력을 위한 체크/신용카드 (Visa 또는 Master)</li>
+									<li>확인 코드 수신을 위한 휴대전화</strong></li>
+								</ul>
+							</li>
+							<li class="fragment">가입 과정은 아래 슬라이드 참고</li>
+						</ul>
+					</section>
+					<section>
+						<a href="https://aws.amazon.com/ko/"><img src="img/aws01.png" /></a>
+						<p>1. aws 홈페이지 접속 후 우측 상단의 <strong>콘솔에 로그인</strong> 클릭</p>
+					</section>
+					<section>
+						<img src="img/aws02.png" />
+						<p>2. <strong>aws 계정 새로 만들기</strong> 클릭</p>
+					</section>
+					<section>
+						<img src="img/aws03.png" />
+						<p>3. 가입할 이메일 주소 입력 (gmail 권장)</p>
+					</section>
+					<section>
+						<img src="img/aws04.png" />
+						<p>4. 입력한 이메일에서 확인 코드 확인 후 입력</p>
+					</section>
+					<section>
+						<img src="img/aws05.png" />
+						<p>5. aws에서 사용할 비밀번호 입력</p>
+					</section>
+					<section>
+						<img src="img/aws06.png" />
+						<p>6. 결제정보 입력 (Visa/Master 카드)</p>
+					</section>
+					<section>
+						<img src="img/aws07.png" />
+						<p>7. 카드 정보 입력</p>
+					</section>
+					<section>
+						<img src="img/aws08.png" />
+						<p>8. 휴대전화 번호 입력</p>
+					</section>
+					<section>
+						<img src="img/aws09.png" />
+						<p>9. 수신한 문자로 본인 인증</p>
+					</section>
+					<section>
+						<img src="img/aws10.png" />
+						<p>10. <strong>기본 지원 - 무료</strong> 플랜으로 가입 완료 클릭</p>
+					</section>
+					<section>
+						<img src="img/aws11.png" />
+						<p>11. aws 가입 완료 (Console로 이동 클릭)</p>
+					</section>
+					<section>
+						<img src="img/aws13.png" />
+						<p>참고) 가입이 완료되면 가입한 이메일로 안내 메일 수신</p>
+					</section>
+				</section>
+
+				<section id="인스턴스" data-transition="fade" data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
+					<section>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">Lightsail 인스턴스 생성</h3>
+						<ul>
+							<li class="fragment"><strong>Lightsail</strong>이란?
+								<ul class="fragment">
+									<div style="text-align: center;"><img src="https://user-images.githubusercontent.com/61646760/197378882-a01019ef-af92-455d-9ccc-91693f052056.png" height="130" /></div>
+									<li>원격으로 접속할 수 있는 컴퓨터를 한 대 빌려주는 AWS 서비스 (가상 프라이빗 서버: VPS)</li>
+									<li>비슷한 기존 서비스인 EC2에 비해 <strong>저렴한 비용</strong>과 <strong>손쉬운 세팅</strong>이 가능한 입문자용 서비스</li>
+									<li>혼자, 빠르게 웹 서비스 호스팅을 할 때 매우 유용</strong></li>
 								</ul>
 							</li>
 						</ul>
-						<p class="fragment" align="right" style="font-size:24px">출처 : 『문화산업과 문화콘텐츠』(2010), 134-135p</p>
 					</section>
 					<section>
-						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">멀티미디어 + 콘텐츠</h3>
-						<ul>
-							<li class="fragment"><strong></strong>
-								<ul class="fragment">
-									<li></li>
-								</ul>
-							</li>
-						</ul>	
+						<img src="img/aws12.png" />
+						<p>1. 로그인 시 자동으로 랜딩되는 콘솔 홈 화면</p>
 					</section>
-				</section> -->
+					<section>
+						<img src="img/aws14.png" />
+						<p>2. 상단에서 Lightsail 검색하여 클릭</p>
+					</section>
+					<section>
+						<img src="img/aws15.png" />
+						<p>3. Lightsail 우측 하단 English를 눌러 한국어로 변경</p>
+					</section>
+					<section>
+						<img src="img/aws16.png" />
+						<p>4. 화면 중앙의 <strong>인스턴스 생성</strong> 클릭</p>
+					</section>
+					<section>
+						<img src="img/aws17.png" />
+						<p>5. 플랫폼(Linux/Unix), 블루프린트(LAMP) 선택</p>
+					</section>
+					<section>
+						<img src="img/aws18.png" />
+						<p>6. 인스턴스 플랜 선택 및 인스턴스 이름 입력</p>
+					</section>
+					<section>
+						<img src="img/aws19.png" />
+						<p>7. <strong>인스턴스 생성</strong> 클릭</p>
+					</section>
+					<section>
+						<img src="img/aws20.png" />
+						<p>8. 인스턴스 생성 진행 중 (컬러가 되면 완료)</p>
+					</section>
+				</section>
+
+				<section id="고정IP" data-transition="fade" data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
+					<section>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">인스턴스 고정 IP 생성</h3>
+						<ul>
+							<li class="fragment"><strong>고정(Static) IP</strong>란?
+								<ul class="fragment">
+									<li>집 주소가 계속 바뀌면 우편을 보내기 곤란함</li>
+									<li>항상 동일한 IP 주소로 고정해 주는 것</li>
+									<li>웹 사이트 호스팅 시 무척 유용하므로 설정해 줘야 함</li>
+								</ul>
+								<li class="fragment">설정하는 방법은 아래 슬라이드 참고</li>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/aws21.png" />
+						<p>1. 생성된 인스턴스 클릭</p>
+					</section>
+					<section>
+						<img src="img/aws22.png" />
+						<p>2. 해당 인스턴스 설정 화면</p>
+					</section>
+					<section>
+						<img src="img/aws23.png" />
+						<p>3. <strong>네트워킹</strong> 버튼 클릭</p>
+					</section>
+					<section>
+						<img src="img/aws24.png" />
+						<p>4. <strong>고정 IP 생성</strong> 클릭</p>
+					</section>
+					<section>
+						<img src="img/aws25.png" />
+						<p>5. 생성한 인스턴스에 연결 후 생성 버튼 클릭</p>
+					</section>
+					<section>
+						<img src="img/aws26.png" />
+						<p>6. 고정 IP 생성 및 연결 완료</p>
+					</section>
+				</section>
+
+				<section id="SSH" data-transition="fade" data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
+					<section>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">웹 SSH로 서버 접속</h3>
+						<ul>
+							<li class="fragment"><strong>SSH</strong>란?
+								<ul class="fragment">
+									<li>보안 셸(Secure SHell)</li>
+									<li>원격 서버에 안전하게 접속하기 위해 사용하는 인터넷 프로토콜</li>
+									<li>PuTTY 등의 프로그램을 많이 쓰나 편의상 AWS 홈페이지에서 제공하는 웹 SSH를 사용!</li>
+								</ul>
+								<li class="fragment">웹 SSH로 서버에 접속하는 방법은 아래 슬라이드 참고</li>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/aws27.png" />
+						<p>1. 인스턴스에서 <strong>SSH를 사용하여 연결</strong> 클릭</p>
+					</section>
+					<section>
+						<img src="img/aws28.png" height="480" />
+						<p>2. 인스턴스 서버 접속 완료</p>
+					</section>
+				</section>
 
 				<!-- <section id="pdf" data-transition="fade">
 					<h2 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">PDF로 다운받기</h2>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/key/JL97kjWKxvzn1L" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
+					<iframe src="//www.slideshare.net/slideshow/embed_code/key/" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
 				</section> -->
-
-				<section id="레퍼런스" data-transition="slide" data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
-					<h2 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">레퍼런스</h2>
-					<ul>
-						<li>도서</li>
-						<ul>
-							<li>추후 작성</li>
-						</ul>
-						<li>논문</li>
-					</ul>
-					
-				</section>
 
 				<section id="질의응답" data-transition="slide" data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
 					<h2 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">질의응답</h2>
