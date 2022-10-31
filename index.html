@@ -39,7 +39,7 @@
 				
 				<section data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
 					<a href="https://revealjs.com">
-						<img src="https://user-images.githubusercontent.com/61646760/192796670-31a92ae9-2489-4071-8c1b-ee9503fef7cb.png" alt="Cloud-computing" style="height: 390px; margin: 0 auto 1rem auto; background: transparent;" class="demo-logo">
+						<img src="https://user-images.githubusercontent.com/61646760/198985174-666528d8-e2b8-4b16-89cc-161a94ed4028.png" alt="Cloud-computing" style="height: 410px; margin: 0 auto 1rem auto; background: transparent;" class="demo-logo">
 					</a>
 					<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">클라우드 컴퓨팅과 AWS 실습</h3>
 					<!-- <p></p> -->
@@ -85,15 +85,77 @@
 					<section>
 						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">AWS와 비용 정책</h3>
 						<ul>
-							<li class="fragment"><strong>프리 티어</strong>
+							<li class="fragment"><strong>컴퓨팅 자원</strong>을 빌려 준다?
 								<ul class="fragment">
-									<li>일정 기간, 한도 내의 AWS 서비스를 무료로 이용해 볼 수 있도록 지원</li>
-									<li>월 750시간(24×31=744시간), 3개월~12개월 무료</li>
-									<li>EC2, Lightsail 등 다양한 서비스 지원</li>
+									<div style="text-align: center;"><img src="https://user-images.githubusercontent.com/61646760/198988237-2038cf32-e742-4c75-af81-e33dd682f1c6.png" height="300" /></div>
+									<li>서버, 스토리지, 데이터베이스 등등</li>
+									<li>계산에 필요한 두뇌, 저장할 수 있는 공간 등</li>
 								</ul>
 							</li>
 						</ul>
+					</section>
+					<section>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">AWS와 비용 정책</h3>
+						<ul>
+							<li class="fragment"><strong>구글 드라이브(Google Drive)</strong>
+								<ul class="fragment">
+									<div style="text-align: center;"><img src="https://user-images.githubusercontent.com/61646760/198990510-b18c0aea-9688-4857-a9d0-005c3763f86a.jpg" height="300" /></div>
+									<li>구글 드라이브는 내 컴퓨터 안에 없음</li>
+									<li>서버를 빌리는 것도 컴퓨터 밖의 컴퓨터를 빌리는 것</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">AWS와 비용 정책</h3>
+						<ul>
+							<li class="fragment"><strong>프리 티어</strong>
+								<ul class="fragment">
+									<li>일정 기간, 한도 내의 AWS 서비스를 무료로 이용해 볼 수 있도록 지원</li>
+									<li>월 750시간(24×31=744시간), 3개월-12개월 무료</li>
+									<li>EC2(12개월), Lightsail(3개월) 등 다양한 서비스 지원</li>
+								</ul>
+							</li>
+							<li class="fragment"><strong>과금을 막기 위한 습관</strong></li>
+								<ul class="fragment">
+									<li>사용하지 않는 인스턴스(서비스)는 바로 지울 것!</li>
+									<li>웬만하면 인스턴스(서비스)는 1개만 유지할 것!</li>
+								</ul>
+						</ul>
 						<p class="fragment" align="right" style="font-size:30px"><a href="https://aws.amazon.com/ko/free">- AWS 프리 티어 지원 서비스 및 정책 보기</a></p>
+					</section>
+					<section>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">AWS와 비용 정책</h3>
+						<ul>
+							<li class="fragment"><strong>AWS Budgets</strong>
+								<ul class="fragment">
+									<div style="text-align: center;"><img src="https://user-images.githubusercontent.com/61646760/198993086-a66ff9eb-b9fc-4d87-ae1c-3b26a5571a80.png" height="200" /></div>
+									<li>과금을 미연에 방지할 수 있는 예산 설정 메뉴</li>
+									<li>설정한 기간 동안 얼마까지 지출할 것인지 설정하고 <strong>그 이상 지출하면 연락이 오게 하는 서비스</strong></li>
+									<li>과금이 두렵고 aws가 낯설다면 설정은 필수!</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/budget01.png" />
+						<p>1. 상단 검색창에 budgets 검색 후 <strong>AWS Budgets</strong> 클릭</p>
+					</section>
+					<section>
+						<img src="img/budget02.png" />
+						<p>2. <strong>예산 생성</strong> 클릭</p>
+					</section>
+					<section>
+						<img src="img/budget03.png" />
+						<p>3. <strong>템플릿 사용(단순)</strong>, <strong>제로 지출 예산</strong> 그대로</p>
+					</section>
+					<section>
+						<img src="img/budget04.png" />
+						<p>4. 연락받을 메일 주소 입력 후 <strong>예산 생성</strong> 클릭</p>
+					</section>
+					<section>
+						<img src="img/budget05.png" />
+						<p>5. 생성 완료! (US$0.00 초과 시 메일 발송)</p>
 					</section>
 				</section>
 
@@ -165,12 +227,46 @@
 					<section>
 						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">Lightsail 인스턴스 생성</h3>
 						<ul>
+							<li class="fragment"><strong>서버(Server)</strong>란?
+								<ul class="fragment">
+									<div style="text-align: center;"><img src="https://user-images.githubusercontent.com/61646760/198999296-13700989-96e6-40ec-962b-c158c64efc8c.png" height="180" /></div>
+									<li>서버는 외부에서 접속할 수 있게 설정된 컴퓨터</li>
+									<li>웹 페이지에 접속했을 때 화면이 뜨는 이유는? 마법?</li>
+									<ul>
+										<li>주소를 입력함으로써 요청을 하면 서버가 그에 대한 응답으로 화면을 띄워 주기 때문!</li>
+									</ul>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<img src="https://user-images.githubusercontent.com/61646760/199001079-37c4b703-a76c-4a30-9e18-8087cbdad4ca.png" />
+						<p>dh 서버의 wiki 내용물을 화면에 띄워 주는 예시</p>
+					</section>
+					<section>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">Lightsail 인스턴스 생성</h3>
+						<ul>
+							<li class="fragment">서버는 어떻게 만들까?
+								<ul class="fragment">
+									<div style="text-align: center;"><img src="https://user-images.githubusercontent.com/61646760/199002816-35f09a8d-4eb5-486a-8386-254724ee806d.png" height="180" /></div>
+									<li>사용자의 요청에 매번 응답해 줄 수 있으면 그게 서버!</li>
+									<li>내 노트북/PC도 세팅을 통해 서버로 만들 수 있음!</li>
+									<ul>
+										<li>사용자가 언제 요청을 할지 모르므로 하루종일 켜 놔야 하는 문제가 있음⋯.</li>
+									</ul>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">Lightsail 인스턴스 생성</h3>
+						<ul>
 							<li class="fragment"><strong>Lightsail</strong>이란?
 								<ul class="fragment">
 									<div style="text-align: center;"><img src="https://user-images.githubusercontent.com/61646760/197378882-a01019ef-af92-455d-9ccc-91693f052056.png" height="130" /></div>
-									<li>원격으로 접속할 수 있는 컴퓨터를 한 대 빌려주는 AWS 서비스 (가상 프라이빗 서버: VPS)</li>
+									<li>원격으로 접속할 수 있는 컴퓨터(서버)를 한 대 빌려주는 AWS 서비스 (가상 프라이빗 서버: VPS)</li>
 									<li>비슷한 기존 서비스인 EC2에 비해 <strong>저렴한 비용</strong>과 <strong>손쉬운 세팅</strong>이 가능한 입문자용 서비스</li>
-									<li>혼자, 빠르게 웹 서비스 호스팅을 할 때 매우 유용</strong></li>
+									<li>내 컴퓨터를 서버로 쓰려면 종일 컴퓨터를 켜 놔야 하지만 <strong>클라우드 서버</strong>가 있다면? 상시 서비스 가능!</li>
 								</ul>
 							</li>
 						</ul>
@@ -256,11 +352,21 @@
 							<li class="fragment"><strong>SSH</strong>란?
 								<ul class="fragment">
 									<li>보안 셸(Secure SHell)</li>
-									<li>원격 서버에 안전하게 접속하기 위해 사용하는 인터넷 프로토콜</li>
-									<li>PuTTY 등의 프로그램을 많이 쓰나 편의상 AWS 홈페이지에서 제공하는 웹 SSH를 사용!</li>
+									<ul>
+										<li>셸 = 검은 화면</li>
+										<li>보안 셸 = 안전한 검은 화면</li>
+									</ul>
+									<li><strong>서버에 안전하게 접속</strong>하기 위해, 사용자와 서버 간에 사용하는 비밀 언어(프로토콜)</li>
+									<img src="https://user-images.githubusercontent.com/61646760/199004624-5b0aac63-d9b6-416d-aad9-760dce7e8a5d.png" height="170" />
 								</ul>
-								<li class="fragment">웹 SSH로 서버에 접속하는 방법은 아래 슬라이드 참고</li>
 							</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/server01.png">
+						<ul>
+							<li>SSH 접속 프로그램으로 PuTTY<a href="https://www.putty.org/">#</a>를 많이 쓰나 편의상 <strong>AWS 홈페이지에서 제공하는 웹 SSH</strong>를 사용!</li>
+							<li class="fragment">웹 SSH로 서버에 접속하는 방법은 아래 슬라이드 참고</li>
 						</ul>
 					</section>
 					<section>
