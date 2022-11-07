@@ -51,11 +51,11 @@
 				<section data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
 					<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">목차</h3>
 					<ol>
-						<li>프론트엔드, 백엔드, 서버</li>
+						<li>서버, 프론트엔드, 백엔드</li>
 						<ol>
+							<li>서버</li>
 							<li>프론트엔드</li>
 							<li>백엔드</li>
-							<li>서버</li>
 						</ol>
 						<li>AWS의 이해와 실습</li>
 						<ol>
@@ -70,23 +70,69 @@
 
 				<section id="서버" data-transition="fade" data-background-image="https://user-images.githubusercontent.com/61646760/191900619-957216a8-5677-44ee-8147-db61d5329a3f.png" data-background-size="contain">
 					<section>
-						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">프론트엔드, 백엔드, 서버</h3>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">서버, 프론트엔드, 백엔드</h3>
 						<ul>
 							<li class="fragment"><strong>서버(Server)</strong>란?
 								<ul class="fragment">
 									<div style="text-align: center;"><img src="https://user-images.githubusercontent.com/61646760/198999296-13700989-96e6-40ec-962b-c158c64efc8c.png" height="180" /></div>
 									<li>서버는 외부에서 접속할 수 있게 설정된 컴퓨터</li>
-									<li>웹 페이지에 접속했을 때 화면이 뜨는 이유는? 마법?</li>
+									<li>웹 페이지에 접속했을 때 화면이 뜨는 이유는?</li>
 									<ul>
-										<li>주소를 입력함으로써 요청을 하면 서버가 그에 대한 응답으로 화면을 띄워 주기 때문!</li>
+										<li>주소를 입력하여 <strong>요청(request)</strong>을 하면 서버가 그에 대한 <strong>응답(response)</strong>으로 화면을 띄워 주기 때문!</li>
 									</ul>
 								</ul>
 							</li>
 						</ul>
 					</section>
 					<section>
-						<img src="https://user-images.githubusercontent.com/61646760/199001079-37c4b703-a76c-4a30-9e18-8087cbdad4ca.png" />
-						<p>dh 서버의 wiki 내용물을 화면에 띄워 주는 예시</p>
+						<img src="img/server02.png" height="500" />
+						<p>haein.info에 ppt-aws 내용을 보여 달라고 요청한 결과!</p>
+					</section>
+					<section>
+						<img src="img/server03.png" height="500" />
+						<p>ppt-aws의 내용물에 해당하는 파일들</p>
+					</section>
+					<section>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">서버, 프론트엔드, 백엔드</h3>
+						<ul>
+							<li>내용물을 대체 어떻게 보여 주는걸까?🤔</li>
+							<ul>
+								<li class="fragment"><strong>프론트엔드(Front-end)</strong></li>
+								<ul class="fragment">
+									<img src="img/front01.png" height="220" />
+									<li>어떻게 보여지는가?</li>
+									<li>내용, 이미지, 구조</li>
+									<li>HTML, CSS 등 사용</li>
+								</ul>
+							</ul>
+						</ul>
+					</section>
+					<section>
+						<img src="https://user-images.githubusercontent.com/61646760/200314797-5737a766-df7c-4997-b81d-1fbbc2b95605.png" height="420" />
+						<ul>
+							<li class="fragment">인터넷 브라우저는 ‘인터넷’이 아니다!</li>
+							<ul class="fragment">
+								<li>html, css 등의 파일을 읽어서 하나의 장면으로 만들어 주는 프로그램</li>
+							</ul>
+						</ul>
+					</section>
+					<section>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">서버, 프론트엔드, 백엔드</h3>
+						<ul>
+							<li>네이버에 로그인할 때 올바른 아이디-비밀번호 조합을 어떻게 알지?🤔</li>
+							<ul>
+								<li class="fragment"><strong>백엔드(Back-end)</strong></li>
+								<ul class="fragment">
+									<li>어떻게 작동하는가?</li>
+									<li>로직, 데이터 등</li>
+								</ul>
+								<li class="fragment">네이버 서버의 데이터베이스에 회원의 아이디-비밀번호 정보가 다 저장되어 있음!</li>
+							</ul>
+						</ul>
+					</section>
+					<section>
+						<h3 style="font-family: 'Gowun Dodum', 'Yuji Syuku';">서버, 프론트엔드, 백엔드</h3>
+						<img class="fragment" src="img/server04.png" height="450" />
 					</section>
 				</section>
 				
